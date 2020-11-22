@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Businesses</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="C:\Users\shilo\OneDrive\Desktop\VS code\betahack\business.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="content">
+  <div class="wrapper">
+    <div class="img-area">
+      <div class="inner-area">
+        <img src="https://images.unsplash.com/photo-1428515613728-6b4607e44363?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="">
+      </div>
+    </div>
+    <div class="icon arrow"><i class="fas fa-arrow-left"></i></div>
+    <div class="icon dots"><i class="fas fa-ellipsis-v"></i></div>
+    <div class="name">Annie's Kitchen</div>
+    <div class="about">Restauraunt & Bar</div>
+    
+    <div class="buttons">
+      <button>Call</button>
+      <button id="myBtn">Reserve</button>
+      
+    </div>
+    
+    <div class="card-content">
+     
+      <div class="row">
+       
+        <span></span>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="img-area">
+      <div class="inner-area">
+        <img src="https://images.unsplash.com/photo-1558191053-8edcb01e1da3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="">
+      </div>
+    </div>
+    <div class="icon arrow"><i class="fas fa-arrow-left"></i></div>
+    <div class="icon dots"><i class="fas fa-ellipsis-v"></i></div>
+    <div class="name">Jenn's Fassion</div>
+    <div class="about">Clothing</div>
+    <div class="social-icons">
+    </div>
+    <div class="buttons">
+      <button>Call</button>
+      <button>Reserve</button>
+    </div>
+    <div class="card-content">
+
+      <div class="row">
+
+        <span></span>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="img-area">
+      <div class="inner-area">
+        <img src="https://images.unsplash.com/photo-1583922146273-68f11083858e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=937&q=80" alt="">
+      </div>
+    </div>
+    <div class="icon arrow"><i class="fas fa-arrow-left"></i></div>
+    <div class="icon dots"><i class="fas fa-ellipsis-v"></i></div>
+    <div class="name">Lil Generals</div>
+    <div class="about">Grocery Store</div>
+    <div class="social-icons">
+    </div>
+    <div class="buttons">
+      <button>Call</button>
+      <button id="myBtn">reserve</button>
+    </div>
+    <div class="card-content">
+
+      <div class="row">
+       
+        <span></span>
+      
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1> Select a Time for Your Reseravtion</h1>
+    <ul>
+        <li><a href =".\confirm.html">10:00 - 11:00</a></li>
+        <li>11:00 - 12:00</li>
+        <li><del>12:00 - 1:00</del></li>
+        <li>1:00 - 2:00</li>
+        <li>2:00 - 13:00</li>
+        <li>1:00 - 11:00</li>
+    </ul>
+  </div>
+
+</div>
+<script>
+    // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+</body>
+</html>

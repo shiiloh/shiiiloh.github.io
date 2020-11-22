@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".\reservations.css">
+    <title>Reservations</title>
+</head>
+<body>
+    <div class="form">
+        <div class="tab-header">
+          <div class="active">Reservations</div>
+          <div>Profile</div>
+        </div>
+        <div class="tab-content">
+          <div class="tab-body active">
+            <div class="form-element">
+                <table class="pure-table">
+                    <thead>
+                        <tr>
+                            <th># Of Customers</th>
+                            <th>Time</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>17</td>
+                            <td><a href=".\names.html">10:00 - 11:00</a></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>11:00 - 12:00</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>12:00 - 1:00</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>1:00 - 2:00</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>2:00 - 3:00</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>3:00 - 4:00</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>4:00 - 5:00</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>5:00 - 6:00</td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+              </div>
+              
+          </div>
+          
+          <div class="tab-body">
+            <div class="wrapper">
+                <div class="img-area">
+                  <div class="inner-area">
+                    <img src="https://images.unsplash.com/photo-1428515613728-6b4607e44363?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="">
+                    <p>click here to change Profile Photo</p>
+                  </div>
+                </div>
+                <div class="icon arrow"><i class="fas fa-arrow-left"></i></div>
+                <div class="icon dots"><i class="fas fa-ellipsis-v"></i></div>
+                <div class="name">Annie's Kitchen</div>
+                <p>click here to change Business name</p>
+                <div class="about">Restauraunt & Bar</div>
+                <p>Click here to change description</p>
+                
+                <div class="card-content">
+                 
+                  <div class="row">
+                   
+                    <span></span>
+                  </div>
+                  
+                </div>
+              </div>
+</body>
+<script>
+    
+     let tabPanes = document.getElementsByClassName("tab-header")[0].getElementsByTagName("div");
+
+for(let i=0;i<tabPanes.length;i++){
+  tabPanes[i].addEventListener("click",function(){
+    document.getElementsByClassName("tab-header")[0].getElementsByClassName("active")[0].classList.remove("active");
+    tabPanes[i].classList.add("active");
+    
+    document.getElementsByClassName("tab-content")[0].getElementsByClassName("active")[0].classList.remove("active");
+    document.getElementsByClassName("tab-content")[0].getElementsByClassName("tab-body")[i].classList.add("active");
+  });
+}
+
+</script>
+</html>

@@ -1,0 +1,305 @@
+* {
+    box-sizing:border-box;
+  }
+  body {
+    background:#003459;
+    font-family: 'Work Sans', sans-serif;
+  }
+  .form {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:100%;
+    height:90vh;
+    background:#2ec4b6;
+    border-radius: 7px;
+  }
+  .form .tab-header {
+    height:50px;
+    line-height:50px;
+    border-radius: 7px;
+  }
+  .form .tab-header > div {
+    width:50%;
+    float:left;
+    text-align:center;
+    background:#f5f5f5;
+    color:black;
+    cursor:pointer;
+    border-radius: 7px;
+  }
+  .form .tab-header > div.active {
+    background:#2ec4b6;
+    color:whitesmoke;
+  }
+  .form .tab-content {
+    padding:20px;
+  }
+  .form .tab-content .form-element {
+    margin:10px 0px;
+  }
+ 
+  .form .tab-content .form-element input {
+    width:100%;
+    padding:10px;
+    margin-top:25px;
+    border:1px solid #aaa;
+    font-size:16px;
+    background:#f5f5f5;
+    border-radius:15px;
+    outline:none;
+  }
+  .form .tab-content .form-element input[type="checkbox"] {
+    width:30px;
+    margin:8px 0px;
+    margin-left:-5px;
+  }
+  .form .tab-content .form-element label {
+    color:#111;
+  }
+  .form .tab-content .form-element button {
+    margin-top:5px;
+    width:100%;
+    padding:7px;
+    border:none;
+    outline:none;
+    background:whitesmoke;
+    color:black;
+    font-size:10px;
+    text-transform:uppercase;
+    cursor:pointer;
+    border-radius:15px;
+    font-weight: 500px;
+  }
+
+  .form .tab-content .form-element button:active{
+    background-color: #0F4FE6;
+  }
+  .form .tab-content > div.active {
+    display:block;
+  }
+  .form .tab-content > div {
+    display:none;
+  }
+
+  .pure-table{
+      width:100%;
+      height:30rem;
+  }
+
+  @import url("https://fonts.googleapis.com/css?family=Work+Sans:400,600");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background:#003459;
+}
+.wrapper,
+.wrapper .img-area,
+.social-icons a,
+.buttons button {
+  background: whitesmoke;
+}
+.tab-body{
+    position: relative;
+}
+.wrapper {
+    left: 25rem;
+    position: absolute;
+  height: 75vh;
+  width: 40%;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 30px;
+}
+.wrapper .icon {
+  font-size: 17px;
+  color: #31344b;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0.7;
+  top: 15px;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50%;
+  font-size: 16px;
+}
+.wrapper .icon i {
+  position: relative;
+  z-index: 9;
+}
+.wrapper .icon.arrow {
+  left: 15px;
+}
+.wrapper .icon.dots {
+  right: 15px;
+}
+.wrapper .img-area {
+  height: 300px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-area .inner-area {
+  height: calc(100% - 25px);
+  width: calc(100% - 25px);
+  border-radius: 50%;
+}
+.inner-area img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.wrapper .name {
+  font-size: 23px;
+  font-weight: 500;
+  color: #31344b;
+  margin: 10px 0 5px 0;
+  padding: 30px;
+}
+.wrapper .about {
+  color: #44476a;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.wrapper .icon:hover::before,
+.buttons button:hover:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  background: #2ec4b6;
+  
+ 
+}
+.buttons button:hover:before {
+  z-index: -1;
+  border-radius: 5px;
+}
+
+.wrapper .buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.buttons button {
+  position: relative;
+  width: 100%;
+  border: 2px solid black;
+  outline: none;
+  padding: 12px 0;
+  color: #31344b;
+  font-size: 17px;
+  font-weight: 400;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 4;
+  transition: all 0.4s ease;
+}
+.buttons button:first-child {
+  margin-right: 10px;
+}
+.buttons button:last-child {
+  margin-left: 10px;
+}
+.wrapper .card-content {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+  padding: 0 5px;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  border-radius: 7px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; /* Could be more or less, depending on screen size */
+}
+
+.modal-content h1{
+  font-size: 30px;
+  margin:30px;
+
+}
+
+.modal-content li{
+ list-style: none;
+ margin:20px;
+}
+
+.modal-content li a{
+  text-decoration:none;
+  color:black;
+}
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+p{
+    text-align: center;
+font-size:10px;
+cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+  color:black;
+}
